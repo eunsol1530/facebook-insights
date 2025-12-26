@@ -28,4 +28,5 @@ def callback():
     page_tokens = facebook.get_page_tokens(user_token)
     return jsonify(page_tokens=page_tokens)
 
-app.run(port=PORT)
+if __name__ == "__main__":
+    app.run(port=PORT)
